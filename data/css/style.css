@@ -105,12 +105,71 @@ body {
   color: #333333;
 }
 
+.personalInfo {
+  font-size: 14px;
+}
+
+.personalInfo p {
+  color: #777777 !important;
+}
+
+.personalInfoTitle {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.personal .card-center {
+  font-weight: normal !important;
+}
+
+.personal .card-center a {
+  text-decoration: underline;
+}
+
+.personal .card-right button {
+  width: 100%;
+  font-size: 13px;
+  border: 1px solid #005CA9;
+  background: none;
+  color: #005CA9;
+  font-weight: bold;
+  margin: 5px 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.personal .card-right button:hover {
+  background: #005CA9;
+  color: #fff;
+}
+
+.personal .card-right button.hire-btn {
+  color: #fff;
+  background: #005CA9;
+}
+
+.personal .card-right button.hire-btn:hover {
+  background: #fff;
+  color: #005CA9;
+}
+
 .client {
   margin-top: 30px;
 }
 
 .client .clientInfo {
   text-align: center;
+  color: #777777;
+}
+
+.client .clientInfo p {
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.client .clientInfo p:first-child {
+  font-weight: bold;
 }
 
 .client .clientInfo .UserImage {
@@ -145,7 +204,7 @@ body {
   border: none;
   background: #005CA9;
   width: 30px;
-  padding: 3px 10px;
+  padding: 0px 8px;
 }
 
 .client .clientInfo .search-input button img {

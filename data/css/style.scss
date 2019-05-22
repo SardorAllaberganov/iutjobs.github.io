@@ -88,11 +88,61 @@ body{
   }
 }
 
-
+.personal{
+  &Info{
+    font-size: 14px;
+    p{
+      color: #777777!important;
+    }
+    &Title{
+      font-weight: bold;
+      margin: 10px 0;
+    }
+  }
+  .card-center{
+    font-weight: normal!important;
+    a{
+      text-decoration: underline;
+    }
+  }
+  .card-right{
+    button{
+      width: 100%;
+      font-size: 13px;
+      border: 1px solid $mainColor;
+      background: none;
+      color: $mainColor;
+      font-weight: bold;
+      margin: 5px 0;
+      transition: all .3s;
+      &:hover{
+        background: $mainColor;
+        color: #fff;
+      }
+    }
+    button.hire-btn{
+      color: #fff;
+      background: $mainColor;
+      &:hover{
+        background: #fff;
+        color: $mainColor;
+      }
+    }
+  }
+}
 .client{
   margin-top: 30px;
   .clientInfo{
     text-align: center;
+    color: #777777;
+    p{
+      font-size: 14px;
+      padding: 0;
+      margin-bottom: 0;
+      &:first-child{
+        font-weight: bold;
+      }
+    }
     .UserImage{
       border-radius: 50%;
       width: 100px;
@@ -119,7 +169,7 @@ body{
         border: none;
         background: $mainColor;
         width: 30px;
-        padding: 3px 10px;
+        padding: 0px 8px;
         img{
           width: 100%;
         }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IutJobs</title>
+  <link rel="shortcut icon" href="data/img/logo_mini.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="data/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm mainNav">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="data/img/logo.svg" class="logo" alt="logo">
+      </a>
+    
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+              <span> Notifications </span> <img src="data/img/notifyItem.svg" alt="">
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <div class="viewall-btn">
+              <a href="" >view all</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item user-item">
+          <a href="personal.html" class="nav-link"> 
+            <span> Bekhzodkhon Makhkamov </span> 
+            <div class="userImg">
+              <img src="data/img/user.svg" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container client personal mb-4">
+    <div class="row">
+      <div class="col-md-2 clientInfo">
+        <div class="UserImage">
+          <img src="data/img/user.svg" alt="">
+        </div>
+        <div class="my-3">
+          <p>John Doe</p>
+          <p>Front-end Developer</p>
+        </div>
+        <form action="">
+          <div class="input-group mb-3 search-input">
+            <input type="text" class="form-control" placeholder="Search" id="filterPersonal" value="">
+            <div class="input-group-append">
+              <button type="button" class="search-btn"><img src="data/img/magnifier.svg" alt=""></button> 
+            </div>
+          </div>
+          <span id="filter-count"></span>
+        </form>
+      </div>
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-header card-center">
+            <a href="">John Doe</a> <span class="mx-2">|</span> <span>Front-end Developer</span>
+          </div>
+          <div class="card-body personalInfo">
+            <div class="row nopadding">
+              <p class="personalInfoTitle">About</p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration. Besides I gained experience in developing software: web-portals (Java / JSP / Java Servlets, PHP, HTML, CSS, java script), C# applications (web services mostly), Java apps.</p>
+            </div>
+            <div class="row nopadding">
+              <p class="personalInfoTitle">Education</p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration. Besides I gained experience in developing software: web-portals (Java / JSP / Java Servlets, PHP, HTML, CSS, java script), C# applications (web services mostly), Java apps.</p>
+            </div>
+            <div class="row nopadding">
+              <p class="personalInfoTitle">Work experience</p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration. Besides I gained experience in developing software: web-portals (Java / JSP / Java Servlets, PHP, HTML, CSS, java script), C# applications (web services mostly), Java apps.</p>
+            </div>
+            <div class="row nopadding">
+              <p class="personalInfoTitle">Skills</p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration. Besides I gained experience in developing software: web-portals (Java / JSP / Java Servlets, PHP, HTML, CSS, java script), C# applications (web services mostly), Java apps.</p>
+            </div>
+            <div class="row nopadding">
+              <p class="personalInfoTitle">Portfolio</p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration. Besides I gained experience in developing software: web-portals (Java / JSP / Java Servlets, PHP, HTML, CSS, java script), C# applications (web services mostly), Java apps.</p>
+            </div>
+
+          </div> 
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card card-right">
+          <div class="card-header">
+            Action
+          </div>
+          <div class="card-body">
+            <button class="hire-btn">Hire freelancer</button>
+            <button>Get contact</button>
+            <button>Share link</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="data/js/index.js"></script>
+</body>
+</html>
