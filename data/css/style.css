@@ -33,6 +33,11 @@ body {
 
 .mainNav .nav-link {
   font-size: 14px;
+  color: #777777;
+}
+
+.mainNav .nav-link:hover {
+  color: #005CA9;
 }
 
 .mainNav .userImg {
@@ -136,6 +141,7 @@ body {
   margin: 5px 0;
   -webkit-transition: all .3s;
   transition: all .3s;
+  padding: 5px 0;
 }
 
 .personal .card-right button:hover {
@@ -153,8 +159,45 @@ body {
   color: #005CA9;
 }
 
+.myModal {
+  color: #777777;
+  font-size: 14px;
+}
+
+.myModal button.close {
+  font-size: 20px;
+}
+
+.myModal .modal-title {
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.myModal button.btn {
+  color: #fff;
+  background: #777777;
+  font-size: 14px;
+  width: 70px;
+}
+
 .client {
   margin-top: 30px;
+}
+
+.client .breadcrumb {
+  background: none;
+  font-size: 14px;
+  padding: 0;
+}
+
+.client .breadcrumb a {
+  color: #777777;
+}
+
+.client .breadcrumb .active {
+  color: #005CA9;
+  font-weight: bold;
 }
 
 .client .clientInfo {
@@ -223,6 +266,7 @@ body {
 }
 
 .client .card-header {
+  padding: .75rem 2rem;
   background: #FBFBFB;
   font-weight: bold;
   color: #777777;
@@ -290,6 +334,67 @@ body {
 .client .card .userInfo {
   margin: 8px 0;
   font-size: 12px;
+}
+
+.projectList {
+  font-size: 14px;
+}
+
+.projectList .list-group-item {
+  padding: 0.75rem 2rem;
+}
+
+.projectList .list-group-item:hover .title {
+  color: #005CA9;
+  text-decoration: underline;
+}
+
+.techInfo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.techInfo li {
+  margin: 0 10px 0 0;
+  background: #E5E5E5;
+  padding: 2px 20px;
+  color: #777777;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.techInfo li:hover {
+  color: #fff;
+  background: #36C8D9;
+}
+
+.projectHeader ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.projectHeader ul li:not(.title) {
+  color: #fff;
+  font-size: 12px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 20px;
+  background: #005CA9;
+  padding: 2px 20px;
+}
+
+.projectHeader ul .title {
+  font-size: 14px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-left: 0;
+  font-weight: bold;
+  color: #333333;
 }
 
 .nopadding {
