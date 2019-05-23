@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IutJobs</title>
+  <link rel="shortcut icon" href="data/img/logo_mini.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="data/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm mainNav">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="data/img/logo.svg" class="logo" alt="logo">
+      </a>
+    
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+              <span> Notifications </span> <img src="data/img/notifyItem.svg" alt="">
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <div class="viewall-btn">
+              <a href="" >view all</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item user-item">
+          <a href="personal.html" class="nav-link"> 
+            <span> Bekhzodkhon Makhkamov </span> 
+            <div class="userImg">
+              <img src="data/img/user.svg" alt="">
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container client settings">
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active">Settings</li>
+        </ul>
+      </div>
+    </div>
+    <form action="">
+      <div class="row">
+        <div class="col-md-2">
+          <div class="UserImage">
+            <img src="data/img/user.svg" alt="">
+          </div>
+          <!-- <p class="mt-3 text-center">Change avatar</p> -->
+          <div class="avatar">
+              <input type="file" class="custom-file-input1">
+            
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-header">Personal information</div>
+            <div class="card-body">
+              <form action="">
+                <input type="text" placeholder="Name" class="form-control my-3">
+                <input type="text" placeholder="Surname" class="form-control mb-3">
+                <input type="text" placeholder="E-mail" class="form-control mb-3">
+              </form>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card">
+            <div class="card-header">Security</div>
+            <div class="card-body">
+              <form action="">
+                <input type="text" placeholder="Current password" class="form-control my-3">
+                <input type="text" placeholder="New password" class="form-control mb-3">
+                <input type="text" placeholder="Confirm password" class="form-control mb-3">
+              </form>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">About</div>
+            <div class="card-body">
+              <textarea name="" id=""></textarea>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Education</div>
+            <div class="card-body">
+              <textarea name="" id=""></textarea>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Work experience</div>
+            <div class="card-body">
+              <textarea name="" id=""></textarea>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Skills</div>
+            <div class="card-body">
+              <textarea name="" id=""></textarea>
+            </div> 
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Portfolio</div>
+            <div class="card-body">
+              <textarea name="" id=""></textarea>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end mb-5">
+        <button>Save</button>
+      </div>
+    </form>
+  </div>
+  <script src="data/js/index.js"></script>
+</body>
+</html>
