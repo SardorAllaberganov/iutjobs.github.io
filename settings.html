@@ -7,10 +7,14 @@
   <title>IutJobs</title>
   <link rel="shortcut icon" href="data/img/logo_mini.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="data/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <!-- multiselect  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <link rel="stylesheet" href="data/css/style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-sm mainNav">
@@ -112,7 +116,7 @@
         </div>
       </div>
       <div class="row my-4">
-        <div class="col-md-12">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-header">About</div>
             <div class="card-body">
@@ -120,8 +124,6 @@
             </div> 
           </div>
         </div>
-      </div>
-      <div class="row my-4">
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">Education</div>
@@ -130,35 +132,83 @@
             </div> 
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header">Work experience</div>
-            <div class="card-body">
-              <textarea name="" id=""></textarea>
-            </div> 
-          </div>
-        </div>
       </div>
+      <hr>
       <div class="row my-4">
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">Skills</div>
+            <!-- <p>Skills</p> -->
             <div class="card-body">
-              <textarea name="" id=""></textarea>
-            </div> 
+              <form action="">
+                
+                <select class="selectpicker" title="Sphere" multiple data-live-search="true">
+                  <option>Mobile Development</option>
+                  <option>Web Development</option>
+                  <option>Design</option>
+                </select>
+                <select class="selectpicker" title="Category" multiple data-live-search="true">
+                  <optgroup label="Web Development">
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Full stack</option>
+                  </optgroup>
+                </select>
+                <select class="selectpicker" title="Skills" multiple data-live-search="true">
+                  <option>Bootstrap</option>
+                  <option>CSS3</option>
+                  <option>JavaScript</option>
+                </select>
+              </form>
+            </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card">
             <div class="card-header">Portfolio</div>
             <div class="card-body">
-              <textarea name="" id=""></textarea>
+              <form action="">
+                <div class="row addPortfolio">
+                  <div class="col-md-12 my-2">
+                    <input type="text" id="title" class="form-control" placeholder="Portfolio title">
+                  </div>
+                  <div class="col-md-12 my-2">
+                    <input type="text" id="link" class="form-control" placeholder="Link">
+                  </div>
+                </div>
+              </form>
+              <div class="d-flex justify-content-end mt-4">
+                <button id="add" class="save">Add</button>
+              </div>
             </div> 
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-end mb-5">
-        <button>Save</button>
+      <hr>
+      <br>
+      <div class="row nopadding">
+        <p>Project list</p>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th>Project title</th>
+                <th>Link</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td class="text-center"><button class="btn btn-outline-danger danger">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end my-5">
+        <button class="save">Save</button>
       </div>
     </form>
   </div>

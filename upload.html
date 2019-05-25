@@ -7,10 +7,14 @@
   <title>IutJobs</title>
   <link rel="shortcut icon" href="data/img/logo_mini.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="data/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <!-- multiselect  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <link rel="stylesheet" href="data/css/style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-sm mainNav">
@@ -70,7 +74,7 @@
       <div class="col-md-6 offset-md-3">
         <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active">Projects</li>
+          <li class="breadcrumb-item active">Upload Project</li>
         </ul>
       </div>
     </div>
@@ -79,8 +83,7 @@
         <div class="UserImage">
           <img src="data/img/user.svg" alt="">
         </div>
-        <p class="mt-3"><strong> Bekhzodkhon Makhkamov</strong></p>
-        <p class="mb-3">Front-end Developer</p>
+        <p class="my-3">Bekhzodkhon Makhkamov</p>
         <form action="">
           <div class="input-group mb-3 search-input">
             <input type="text" class="form-control" placeholder="Search" id="filter" value="">
@@ -94,7 +97,7 @@
       <div class="col-md-9">
         <div class="card mb-4">
           <div class="card-header">
-            Feed
+            Upload project
 
             <button type="button" class="threeDots dropdown" data-toggle="dropdown" aria-label="Left Align">
             </button>
@@ -114,81 +117,58 @@
               </a>
             </div>
           </div>
-          <div class="card-body nopadding projectList" id="ourHolder">
-            <div class="list-group list-group-flush">
-              <a href="project.html" class="list-group-item list-group-item-action front-end">
-                <div class="projectHeader mb-3">
-                  <ul>
-                    <li class="title">Windows App Developer Using WPF</li>
-                    <li>Project</li>
-                    <li>$200</li>
-                    <li>Entry level</li>
-                  </ul>
+          <div class="card-body upload" id="ourHolder">
+            <form action="">
+              <div class="row">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Project title">
                 </div>
-                <p class="userInfo mb-4">
-                    We have a windows based POS Application (point of sale). We are having an issue with the POS app printing to a WiFi receipt printer.  We are looking for a Windows Application developer who has extensive experience in WPF (Windows Presentation Foundation) as well as Windows printing environment process to try to resolve the problem.  Here is a description of the printing issue:  
-                </p>
-                <div>
-                  <ul class="techInfo">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                  </ul>
+                <div class="col-md-4">
+                  <select name="" id="" title="Project for" class="form-control">
+                    <option value="" selected hidden disabled>Project for</option>
+                    <option value="">Mobile Development</option>
+                    <option value="">Web Development</option>
+                    <option value="">Design</option>
+                  </select>
                 </div>
-                <p class="mt-4">Interested: <strong>5 members</strong></p>
-              </a>
-              <a href="project.html" class="list-group-item list-group-item-action front-end">
-                <div class="projectHeader mb-3">
-                  <ul>
-                    <li class="title">Full stack developer(Bootstrap&Flask)</li>
-                    <li>Project</li>
-                    <li>$200</li>
-                    <li>Entry level</li>
-                  </ul>
+                <div class="col-md-4">
+                  <select name="" id="" title="Project for" class="form-control">
+                    <option value="" selected hidden disabled>Type</option>
+                    <option value="">Project</option>
+                    <option value="">Job offer</option>
+                    <option value="">Internship</option>
+                  </select>
                 </div>
-                <p class="userInfo mb-4">
-                  - Rich of Experiences with Bootstrap <br>
-                  - Rich of Experiences with Flask <br>
-                  - Stripe payments <br>
-                  - Clean coding style <br>
-                </p>
-                <div>
-                  <ul class="techInfo">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                  </ul>
+              </div>
+              <div class="row my-4">
+                <div class="col-md-12">
+                  <textarea class="form-control" placeholder="Description"></textarea>
                 </div>
-                <p class="mt-4">Interested: <strong>15 members</strong></p>
-              </a>
-              <a href="project.html" class="list-group-item list-group-item-action front-end">
-                <div class="projectHeader mb-3">
-                  <ul>
-                    <li class="title">Trustbank is offering job positions</li>
-                    <li>Job offer</li>
-                    <li>$200</li>
-                    <li>Entry level</li>
-                  </ul>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Price">
                 </div>
-                <p class="userInfo mb-4">
-                  Dear Seniors, Trustbank is offering job positions in the department of information technologies. 
-                  You can contact for more details and send your personal information (объективка) via telegram to +998909411177, 
-                  Kamoliddin Nosirov. 
-                  Thank you.
-                </p>
-                <div>
-                  <ul class="techInfo">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                  </ul>
+                <div class="col-md-4">
+                  <select name="" id="" title="Project for" class="form-control">
+                    <option value="" selected hidden disabled>Level</option>
+                    <option value="">Entry-level</option>
+                    <option value="">Medium-level</option>
+                    <option value="">High-level</option>
+                  </select>
                 </div>
-                <p class="mt-4">Interested: <strong>5 members</strong></p>
-              </a>
-            </div>
+                <div class="col-md-4">
+                  <select class="selectpicker" title="Skills" multiple data-live-search="true">
+                    <option>Bootstrap</option>
+                    <option>CSS3</option>
+                    <option>JavaScript</option>
+                  </select>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end my-5">
+                <button class="main-btn">Upload</button>
+              </div>
+            </form>
           </div> 
         </div>
       </div>

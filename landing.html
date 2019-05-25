@@ -23,13 +23,13 @@
       <!-- Links -->
       <ul class="navbar-nav ml-auto ">
         <li class="nav-item">
-          <a class="nav-link sign" href="#">
+          <a class="nav-link sign" href="" data-toggle="modal" data-target="#signUp">
             sign up
           </a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link login"> 
-            log in
+          <a href="" class="nav-link login" data-toggle="modal" data-target="#signIn"> 
+            Sign in
           </a>
         </li>
       </ul>
@@ -49,13 +49,96 @@
               <img src="data/img/bodyImg.svg" alt="">
             </div>
             <div>
-              <button>Get started</button>
+              <button data-toggle="modal" data-target="#signIn">Get started</button>
             </div>
           </div>
         </center>
       </div>
     </div>
   </div>
+  <!-- The Sign In Modal -->
+  <div class="modal fade myModal" id="signIn">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3>Sign in</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body mx-3">
+          <form action="">
+            <div class="row">
+              <input type="text" placeholder="E-mail" class="form-control my-3">
+              <input type="text" placeholder="Password" class="form-control">
+            </div>
+            <div class="row mt-4">
+              <div class="col nopadding">
+                <div class="d-flex justify-content-start">
+                  <a href="" class="forgot">Forgot password?</a>
+                </div>
+              </div>
+              <div class="col nopadding">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="main-btn" data-dismiss="modal">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="text-center mb-3">
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <!-- The Sign Up Modal -->
+  <div class="modal fade myModal" id="signUp">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body mx-3">
+          <form action="">
+            <div class="row">
+              <input type="text" placeholder="E-mail" class="form-control my-3">
+              <input type="text" placeholder="Phone" class="form-control mb-3">
+              <input type="text" placeholder="Password" class="form-control mb-3">
+              <input type="text" placeholder="Confirm Password" class="form-control mb-3">
+              <select name="" id="" class="form-control">
+                <option value="" selected hidden disabled>Profile type</option>
+                <option value="">Freelancer</option>
+                <option value="">Client</option>
+              </select>
+            </div>
+            <div class="row mt-4">
+              <div class="col nopadding">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="main-btn" data-dismiss="modal">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="text-center mb-3">
+        </div>
+  
+      </div>
+    </div>
+</div>
 
 </body>
 </html>

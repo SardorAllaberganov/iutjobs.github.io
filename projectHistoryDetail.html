@@ -76,13 +76,12 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2 nopadding clientInfo">
+      <div class="col-md-2 clientInfo">
         <div class="UserImage">
           <img src="data/img/user.svg" alt="">
         </div>
         <div class="my-3">
-          <p>John Doe</p>
-          <p>Front-end Developer</p>
+          <p>Bekhzodkhon Makhkamov</p>
         </div>
         <form action="">
           <div class="input-group mb-3 search-input">
@@ -121,78 +120,35 @@
                 <li>Bootstrap</li>
               </ul>
             </div>
-            <p class="mt-4">Interested: <strong>5 members</strong></p>
-
+            <p class="mt-5">Member list: </p>
+            <hr>
+            <div class="row memberlist mb-4">
+              <div class="col-md-2 col-sm-3 col-xs-3">
+                <img src="data/img/user.svg" alt="">
+              </div>
+              <div class="col-md-7 col-sm-6 col-xs-6">
+                <p class="marked my-2">John Doe</p>
+                <p class="my-1"><strong>Front-end developer</strong></p>
+                <p class="my-1">Rating: <strong> 4.9 / 5.0</strong></p>
+              </div>
+              <div class="col-md-3 col-sm-3 col-xs-3">
+                <button class="getContact my-4" data-toggle="modal" data-target="#getContact">Get contact</button>
+              </div>
+            </div>
           </div> 
         </div>
       </div>
-      <div class="col-md-2 nopadding">
+      <div class="col-md-2">
         <div class="card card-right">
           <div class="card-header">
             Action
           </div>
-          <div class="card-body">
-            <button class="hire-btn" data-toggle="modal" data-target="#submit">Submit proposal</button>
-            <button data-toggle="modal" data-target="#getContact">Get contact</button>
-            <button>Share link</button>
+          <div class="card-body projectHistory">
+            <button class="hire-btn">Edit</button>
+            <button class="outline-disable-btn">Disable project</button>
+            <button class="outline-danger-btn">Delete project</button>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!-- The Hire Modal -->
-  <div class="modal fade myModal" id="hireModal">
-    <div class="modal-dialog modal-sm modal-dialog-centered">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Hire freelancer</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p class="text-center">
-            You are going to hire John Doe, by pressing Send button you will send invitation for job or project.
-          </p>
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="text-center mb-3">
-          <button type="button" class="btn" style="background: #005CA9" data-toggle="modal" data-target="#successModal" data-dismiss="modal">Send</button>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-
-  <!-- The Success Modal -->
-  <div class="modal fade myModal" id="successModal">
-    <div class="modal-dialog modal-sm modal-dialog-centered">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Success</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body">
-          <p class="text-center">
-            <img src="data/img/success.svg" alt="success">
-          </p>
-          <p class="text-center">
-            Invitation is sent!
-          </p>
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="text-center mb-3">
-          <button type="button" class="btn" data-dismiss="modal">Close</button>
-        </div>
-  
       </div>
     </div>
   </div>

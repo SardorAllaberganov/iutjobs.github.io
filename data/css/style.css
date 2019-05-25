@@ -110,6 +110,91 @@ body {
   color: #333333;
 }
 
+.upload textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.upload .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+  height: 30px;
+}
+
+.upload .bootstrap-select > .dropdown-toggle.bs-placeholder, .upload .btn-light {
+  height: 30px;
+  border: 1px solid #ced4da;
+  background: none;
+  color: #777777;
+}
+
+.upload .bootstrap-select .dropdown-toggle .filter-option {
+  padding: 4px 15px;
+  font-size: 14px;
+}
+
+.upload .bootstrap-select .dropdown-menu.inner {
+  font-size: 14px;
+}
+
+.memberlist .marked {
+  color: #005CA9 !important;
+}
+
+.memberlist .getContact {
+  color: #fff;
+  background: #005CA9;
+  border: 1px solid #005CA9;
+  padding: 5px 25px;
+  border-radius: 2px;
+}
+
+button.main-btn {
+  border-radius: 3px;
+  font-size: 14px;
+  border: 1px solid #005CA9;
+  background: #005CA9;
+  color: #fff;
+  font-weight: bold;
+  margin: 5px 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 5px 30px;
+}
+
+button.main-btn:hover {
+  background: #fff;
+  color: #005CA9;
+}
+
+.starrating > input {
+  display: none;
+}
+
+/* Remove radio buttons */
+.starrating > label:before {
+  content: "\2605";
+  /* Star */
+  margin: 2px;
+  font-size: 3em;
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+.starrating > label {
+  color: #777;
+  /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label {
+  color: #ffca08;
+}
+
+/* Set yellow color when star checked */
+.starrating > input:hover ~ label {
+  color: #ffca08;
+}
+
+/* Set yellow color when star hover */
 .personalInfo {
   font-size: 14px;
 }
@@ -131,7 +216,28 @@ body {
   text-decoration: underline;
 }
 
+.personal .card-right .outline-disable-btn {
+  border: 1px solid #777;
+  color: #777777;
+}
+
+.personal .card-right .outline-disable-btn:hover {
+  background: #777777;
+  color: #fff;
+}
+
+.personal .card-right .outline-danger-btn {
+  border-color: #EA3333;
+  color: #EA3333;
+}
+
+.personal .card-right .outline-danger-btn:hover {
+  background: #EA3333;
+  color: #fff;
+}
+
 .personal .card-right button {
+  border-radius: 3px;
   width: 100%;
   font-size: 13px;
   border: 1px solid #005CA9;
@@ -453,7 +559,16 @@ body {
   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
-.settings button {
+.settings button.danger {
+  height: 30px;
+  padding: 2px 25px;
+}
+
+.settings .table td:last-child {
+  width: 100px;
+}
+
+.settings button.save {
   padding: 2px 50px;
   font-size: 14px;
   color: #fff;
@@ -464,10 +579,38 @@ body {
   border-radius: 2px;
 }
 
-.settings button:hover {
+.settings button.save:hover {
   color: #005CA9;
   background: #fff;
   border-color: #005CA9;
+}
+
+.settings .bootstrap-select {
+  width: 100% !important;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.settings .bootstrap-select button {
+  padding: 3px 10px;
+  outline: none;
+}
+
+.settings .bootstrap-select .dropdown-menu {
+  font-size: 14px;
+}
+
+.settings .bootstrap-select .dropdown-menu input {
+  height: 30px;
+  padding: 5px 10px;
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.settings .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+  font-size: 14px;
 }
 
 .settings textarea {
@@ -509,6 +652,23 @@ body {
   background: #005CA9;
 }
 
+.forgot {
+  padding: 10px 0;
+  text-decoration: none !important;
+  color: #005CA9;
+  font-weight: bold;
+}
+
+#signIn h3, #signUp h3 {
+  color: #333;
+  font-weight: bold;
+}
+
+#signIn .form-control, #signUp .form-control {
+  height: 30px;
+  font-size: 14px;
+}
+
 .landing-main {
   background: url(../img/back.svg);
   width: 100%;
@@ -544,6 +704,7 @@ body {
 }
 
 .landing-main button {
+  outline: none;
   margin: 20px 0;
   border: 2px solid transparent;
   background: #fff;
