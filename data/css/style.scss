@@ -140,13 +140,13 @@ body{
   }
 }
 
-button.main-btn{
+button.main-btn,.action-btns{
   border-radius: 3px;
   font-size: 14px;
   border: 1px solid $mainColor;
   background: $mainColor;
   color: #fff;
-  font-weight: bold;
+  letter-spacing: .3px;
   margin: 5px 0;
   transition: all .3s;
   padding: 5px 30px;
@@ -156,6 +156,9 @@ button.main-btn{
   }
 }
 
+.action-btns{
+  width: 100%;
+}
 
 
 .starrating > input {display: none;}  /* Remove radio buttons */
@@ -329,6 +332,7 @@ button.main-btn{
       .form-control{
         height: 30px;
         font-size: 14px;
+        padding: 4px 10px;
       }
     }
     &-header{
@@ -487,10 +491,18 @@ button.main-btn{
 }
 
 .projectHistory{
-  
 }
 
 .settings{
+  .tableinputs{
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    height: 100%;
+    color: #333;
+  }
   button.danger{
     height: 30px;
     padding: 2px 25px;

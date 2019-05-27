@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IutJobs</title>
+  <link rel="shortcut icon" href="data/img/logo_mini.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="data/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm mainNav">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <img src="data/img/logo.svg" class="logo" alt="logo">
+      </a>
+    
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+              <span> Notifications </span> <img src="data/img/notifyItem.svg" alt="">
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="dropdownImg"><img src="data/img/user.svg" alt=""></div>
+              <div class="dropdownContent">
+                <p class="dropdownContentTitle">Bekhzodkhon Makhkamov</p>
+                <p class="dropdownContentDesc">is interested in your project <br> <span>project title</span> </p>
+              </div>
+            </a>
+            <div class="viewall-btn">
+              <a href="" >view all</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item user-item dropdown">
+          <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown"> 
+            <span> Bekhzodkhon Makhkamov </span> 
+            <div class="userImg">
+              <img src="data/img/user.svg" alt="">
+            </div>
+          </a>
+          <div class="dropdown-menu userDropdown">
+            <a class="dropdown-item" href="#">
+              Profile
+            </a>
+            <a class="dropdown-item" href="#">
+              Dashboard
+            </a>
+            <a class="dropdown-item" href="#">
+              Log out
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container client">
+    <div class="row">
+      <div class="col-md-6 offset-md-2">
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active">Projects</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 clientInfo">
+        <div class="UserImage">
+          <img src="data/img/user.svg" alt="">
+        </div>
+        <p class="my-3">Bekhzodkhon Makhkamov</p>
+        <form action="">
+          <div class="input-group mb-3 search-input">
+            <input type="text" class="form-control" placeholder="Search" id="filter" value="">
+            <div class="input-group-append">
+              <button type="button" class="search-btn"><img src="data/img/magnifier.svg" alt=""></button> 
+            </div>
+          </div>
+          <span id="filter-count"></span>
+        </form>
+      </div>
+      <div class="col-md-7">
+        <div class="card mb-4">
+          <div class="card-header">
+            Project History
+
+            <button type="button" class="threeDots dropdown" data-toggle="dropdown" aria-label="Left Align">
+            </button>
+
+            <div class="dropdown-menu" id="filterOptions">
+              <a href="" class="all">
+                All
+              </a>
+              <a class="front-end" href="#">
+                Front-end Dev
+              </a>
+              <a class="back-end" href="#">
+                Back-end Dev
+              </a>
+              <a class="designer" href="#">
+                Designer
+              </a>
+            </div>
+          </div>
+          <div class="card-body nopadding projectList" id="ourHolder">
+            <div class="list-group list-group-flush">
+              <a href="projectHistoryDetail.html" class="list-group-item list-group-item-action front-end">
+                <div class="projectHeader mb-3">
+                  <ul>
+                    <li class="title">Windows App Developer Using WPF</li>
+                    <li>Project</li>
+                    <li>$200</li>
+                    <li>Entry level</li>
+                  </ul>
+                </div>
+                <p class="userInfo mb-4">
+                    We have a windows based POS Application (point of sale). We are having an issue with the POS app printing to a WiFi receipt printer.  We are looking for a Windows Application developer who has extensive experience in WPF (Windows Presentation Foundation) as well as Windows printing environment process to try to resolve the problem.  Here is a description of the printing issue:  
+                </p>
+                <div>
+                  <ul class="techInfo">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+                <p class="mt-4">Interested: <strong>5 members</strong></p>
+              </a>
+              <a href="projectHistoryDetail.html" class="list-group-item list-group-item-action front-end">
+                <div class="projectHeader mb-3">
+                  <ul>
+                    <li class="title">Full stack developer(Bootstrap&Flask)</li>
+                    <li>Project</li>
+                    <li>$200</li>
+                    <li>Entry level</li>
+                  </ul>
+                </div>
+                <p class="userInfo mb-4">
+                  - Rich of Experiences with Bootstrap <br>
+                  - Rich of Experiences with Flask <br>
+                  - Stripe payments <br>
+                  - Clean coding style <br>
+                </p>
+                <div>
+                  <ul class="techInfo">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+                <p class="mt-4">Interested: <strong>15 members</strong></p>
+              </a>
+              <a href="projectHistoryDetail.html" class="list-group-item list-group-item-action front-end">
+                <div class="projectHeader mb-3">
+                  <ul>
+                    <li class="title">Trustbank is offering job positions</li>
+                    <li>Job offer</li>
+                    <li>$200</li>
+                    <li>Entry level</li>
+                  </ul>
+                </div>
+                <p class="userInfo mb-4">
+                  Dear Seniors, Trustbank is offering job positions in the department of information technologies. 
+                  You can contact for more details and send your personal information (объективка) via telegram to +998909411177, 
+                  Kamoliddin Nosirov. 
+                  Thank you.
+                </p>
+                <div>
+                  <ul class="techInfo">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+                <p class="mt-4">Interested: <strong>5 members</strong></p>
+              </a>
+            </div>
+          </div> 
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card mb-4">
+          <div class="card-header">
+            Action
+          </div>
+          <div class="card-body text-center">
+            <button class="main-btn action-btns">Create project</button>
+            <button class="main-btn action-btns">Settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="data/js/index.js"></script>
+</body>
+</html>

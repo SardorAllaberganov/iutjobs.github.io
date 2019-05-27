@@ -77,25 +77,3 @@ $(document).ready(function(){
   });
 });
 
-
-
-$(document).ready(function(){
-  $('#add').click(function(){
-      
-      // make remove button and event
-      var but = $('<button class="btn btn-outline-danger danger">Delete</button>').click(function(){
-          $(this).parent().parent().remove();
-      });
-      // make button td
-      var buttontd = $('<td class="text-center"></td>').append(but);
-      
-      // make row
-      var tr = $('<tr><td>'+$('#title').val()+'</td><td>'+$('#link').val()+'</td></tr>').append(buttontd);
-      
-      // add row to table
-      $('.table').append(tr);
-      $('.addPortfolio input').val("");
-      // return false so form is not submitted
-      return false;
-  });
-});
