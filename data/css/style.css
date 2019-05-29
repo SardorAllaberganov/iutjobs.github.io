@@ -230,26 +230,6 @@ button.main-btn:hover, .action-btns:hover {
   text-decoration: underline;
 }
 
-.personal .card-right .outline-disable-btn {
-  border: 1px solid #777;
-  color: #777777;
-}
-
-.personal .card-right .outline-disable-btn:hover {
-  background: #777777;
-  color: #fff;
-}
-
-.personal .card-right .outline-danger-btn {
-  border-color: #EA3333;
-  color: #EA3333;
-}
-
-.personal .card-right .outline-danger-btn:hover {
-  background: #EA3333;
-  color: #fff;
-}
-
 .personal .card-right button {
   border-radius: 3px;
   width: 100%;
@@ -277,6 +257,100 @@ button.main-btn:hover, .action-btns:hover {
 .personal .card-right button.hire-btn:hover {
   background: #fff;
   color: #005CA9;
+}
+
+.outline-disable-btn {
+  border: 1px solid #777;
+  color: #777777;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #777;
+  letter-spacing: .3px;
+  margin: 5px 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 5px 30px;
+  width: 130px;
+  background: none;
+}
+
+.outline-disable-btn:hover {
+  background: #777777;
+  color: #fff;
+}
+
+.outline-danger-btn {
+  width: 130px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: .3px;
+  margin: 5px 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  padding: 5px 30px;
+  background: none;
+  border: 1px solid #EA3333;
+  color: #EA3333;
+}
+
+.outline-danger-btn:hover {
+  background: #EA3333;
+  color: #fff;
+}
+
+.notifications {
+  font-size: 14px;
+  color: #777;
+}
+
+.notifications .accepted {
+  background: #777;
+  color: #fff;
+}
+
+.notifications .declined:hover {
+  background: none;
+  color: #777777;
+}
+
+.notifications .marked {
+  color: #005CA9;
+}
+
+.notifications p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+.notifications img {
+  width: 80px;
+}
+
+.notifications li {
+  position: relative;
+}
+
+.notifications li .clear-btn {
+  font-size: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  padding: 0;
+  width: 20px;
+  background: none;
+  border: 1px solid #333;
+  height: 20px;
+  outline: none;
+  color: #333333;
+  right: 5px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.notifications li .clear-btn:hover {
+  background: #333;
+  color: #fff;
 }
 
 .myModal {

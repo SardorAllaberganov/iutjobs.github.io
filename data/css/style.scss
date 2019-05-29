@@ -201,22 +201,7 @@ button.main-btn,.action-btns{
     }
   }
   .card-right{
-    .outline-disable-btn{
-      border: 1px solid #777;
-      color: #777777;
-      &:hover{
-        background: #777777;
-        color: #fff;
-      }
-    }
-    .outline-danger-btn{
-      border-color: #EA3333;
-      color: #EA3333;
-      &:hover{
-        background: #EA3333;
-        color: #fff;
-      }
-    }
+    
     button{
       border-radius: 3px;
       width: 100%;
@@ -243,6 +228,88 @@ button.main-btn,.action-btns{
     }
   }
 }
+.outline-disable-btn{
+  border: 1px solid #777;
+  color: #777777;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #777;
+  letter-spacing: .3px;
+  margin: 5px 0;
+  transition: all .3s;
+  padding: 5px 30px;
+  width: 130px;
+  background: none;
+  &:hover{
+    background: #777777;
+    color: #fff;
+  }
+}
+.outline-danger-btn{
+  width: 130px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: .3px;
+  margin: 5px 0;
+  transition: all .3s;
+  padding: 5px 30px;
+  background: none;
+  border: 1px solid #EA3333;
+  color: #EA3333;
+  &:hover{
+    background: #EA3333;
+    color: #fff;
+  }
+}
+
+.notifications{
+  .accepted{
+    background: #777;
+    color: #fff;
+  }
+  .declined{
+    &:hover{
+      background: none;
+      color: #777777;
+    }
+  }
+  font-size: 14px;
+  color: #777;
+  .marked{
+    color: $mainColor;
+  }
+  p{
+    font-size: 13px;
+    margin: 3px 0;
+  }
+  img{
+    width: 80px;
+  }
+  li{
+    position: relative;
+    .clear-btn{
+      font-size: 12px;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      padding: 0;
+      width: 20px;
+      background: none;
+      border: 1px solid #333;
+      height: 20px;
+      outline: none;
+      color: #333333;
+      right: 5px;
+      transition: all .2s;
+      &:hover{
+        background: #333;
+        color: #fff;
+      }
+    }
+  }
+}
+
 .myModal{
   button.close{
     font-size: 20px;

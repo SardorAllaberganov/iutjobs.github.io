@@ -78,16 +78,15 @@
 
   <div class="container client">
     <div class="row">
-      <div class="col-md-6 offset-md-2
-      ">
+      <div class="col-md-6 offset-md-3">
         <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active">Projects</li>
+          <li class="breadcrumb-item active">Notifications</li>
         </ul>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2 clientInfo">
+      <div class="col-md-3 clientInfo">
         <div class="UserImage">
           <img src="data/img/user.svg" alt="">
         </div>
@@ -102,120 +101,78 @@
           <span id="filter-count"></span>
         </form>
       </div>
-      <div class="col-md-7">
-        <div class="card mb-4">
+      <div class="col-md-9 notifications">
+        <div class="card">
           <div class="card-header">
-            Project History
+              Notifications
 
             <button type="button" class="threeDots dropdown" data-toggle="dropdown" aria-label="Left Align">
             </button>
 
-            <div class="dropdown-menu" id="filterOptions">
-              <a href="" class="all">
-                All
-              </a>
-              <a class="front-end" href="#">
-                Front-end Dev
-              </a>
-              <a class="back-end" href="#">
-                Back-end Dev
-              </a>
-              <a class="designer" href="#">
-                Designer
+            <div class="dropdown-menu">
+              <a href="" class="" style="color: #EA3333">
+                Clear all
               </a>
             </div>
           </div>
-          <div class="card-body nopadding projectList" id="ourHolder">
+          <div class="card-body nopadding">
             <div class="list-group list-group-flush">
-              <a href="projectHistoryDetail.html" class="list-group-item list-group-item-action front-end">
-                <div class="projectHeader mb-3">
-                  <ul>
-                    <li class="title">Windows App Developer Using WPF</li>
-                    <li>Project</li>
-                    <li>$200</li>
-                    <li>Entry level</li>
-                  </ul>
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="data/img/user.svg" alt="">
+                  </div>
+                  <div class="nopadding col-md-7 col-sm-7 col-xs-7">
+                    <h6 class="mb-3 marked">John Doe</h6>
+                    <p>Invited you to the project <span class="marked"> Project title </span></p>
+                    <p>21 May 2019</p>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <button class="main-btn" style="width: 130px">Accept</button>
+                    <button class="outline-danger-btn">Decline</button>
+                    <button class="clear-btn">&times</button>
+                  </div>
                 </div>
-                <p class="userInfo mb-4">
-                    We have a windows based POS Application (point of sale). We are having an issue with the POS app printing to a WiFi receipt printer.  We are looking for a Windows Application developer who has extensive experience in WPF (Windows Presentation Foundation) as well as Windows printing environment process to try to resolve the problem.  Here is a description of the printing issue:  
-                </p>
-                <div>
-                  <ul class="techInfo">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                  </ul>
+              </li>
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="data/img/user.svg" alt="">
+                  </div>
+                  <div class="nopadding col-md-7 col-sm-7 col-xs-7">
+                    <h6 class="mb-3 marked">John Doe</h6>
+                    <p>Invited you to the project <span class="marked"> Project title </span></p>
+                    <p>21 May 2019</p>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <button class="outline-disable-btn accepted" disabled>Accepted</button>
+                    <button class="clear-btn">&times</button>
+                  </div>
                 </div>
-                <p class="mt-4">Interested: <strong>5 members</strong></p>
-              </a>
-              <a href="projectHistoryDetail.html" class="list-group-item list-group-item-action front-end">
-                <div class="projectHeader mb-3">
-                  <ul>
-                    <li class="title">Full stack developer(Bootstrap&Flask)</li>
-                    <li>Project</li>
-                    <li>$200</li>
-                    <li>Entry level</li>
-                  </ul>
+              </li>
+              <li class="list-group-item list-group-item-action">
+                <div class="row">
+                  <div class="col-md-2 col-sm-2 col-xs-2">
+                    <img src="data/img/user.svg" alt="">
+                  </div>
+                  <div class="nopadding col-md-7 col-sm-7 col-xs-7">
+                    <h6 class="mb-3 marked">John Doe</h6>
+                    <p>Invited you to the project <span class="marked"> Project title </span></p>
+                    <p>21 May 2019</p>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <button class="outline-disable-btn declined" disabled>Declined</button>
+                    <button class="clear-btn">&times</button>
+                  </div>
                 </div>
-                <p class="userInfo mb-4">
-                  - Rich of Experiences with Bootstrap <br>
-                  - Rich of Experiences with Flask <br>
-                  - Stripe payments <br>
-                  - Clean coding style <br>
-                </p>
-                <div>
-                  <ul class="techInfo">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                </div>
-                <p class="mt-4">Interested: <strong>15 members</strong></p>
-              </a>
-              <a href="projectHistoryDetail.html" class="list-group-item list-group-item-action front-end">
-                <div class="projectHeader mb-3">
-                  <ul>
-                    <li class="title">Trustbank is offering job positions</li>
-                    <li>Job offer</li>
-                    <li>$200</li>
-                    <li>Entry level</li>
-                  </ul>
-                </div>
-                <p class="userInfo mb-4">
-                  Dear Seniors, Trustbank is offering job positions in the department of information technologies. 
-                  You can contact for more details and send your personal information (объективка) via telegram to +998909411177, 
-                  Kamoliddin Nosirov. 
-                  Thank you.
-                </p>
-                <div>
-                  <ul class="techInfo">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bootstrap</li>
-                  </ul>
-                </div>
-                <p class="mt-4">Interested: <strong>5 members</strong></p>
-              </a>
+              </li>
             </div>
           </div> 
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card mb-4">
-          <div class="card-header">
-            Action
-          </div>
-          <div class="card-body text-center">
-            <button class="main-btn action-btns">Create project</button>
-            <button class="main-btn action-btns">Settings</button>
-          </div>
         </div>
       </div>
     </div>
   </div>
   <script src="data/js/index.js"></script>
+  
 </body>
 </html>

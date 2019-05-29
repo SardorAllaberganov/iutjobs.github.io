@@ -141,7 +141,7 @@
             Action
           </div>
           <div class="card-body">
-            <button class="hire-btn" data-toggle="modal" data-target="#hireModal">Hire freelancer</button>
+            <button class="hire-btn" data-toggle="modal" data-target="#projectList">Hire freelancer</button>
             <button data-toggle="modal" data-target="#getContact">Get contact</button>
             <button>Share link</button>
             <button data-toggle="modal" data-target="#rateModal">Rate freelancer</button>
@@ -151,6 +151,38 @@
     </div>
   </div>
 
+
+  <!-- The Hire Modal -->
+  <div class="modal fade myModal" id="projectList">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Hire freelancer for...</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body nopadding">
+          <div class="list-group list-group-flush">
+            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#hireModal" class="list-group-item list-group-item-action">
+              <p><strong>Project Title</strong></p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration....</p>
+            </a>
+            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#hireModal" class="list-group-item list-group-item-action">
+              <p><strong>Project Title</strong></p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration....</p>
+            </a>
+            <a href="" data-toggle="modal" data-dismiss="modal" data-target="#hireModal" class="list-group-item list-group-item-action">
+              <p><strong>Project Title</strong></p>
+              <p>I prefer to work in the field of database development: Oracle, MSSQL, MySQL, Postgres, that includes database design, optimization, migration and integration....</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- The Hire Modal -->
   <div class="modal fade myModal" id="hireModal">
@@ -166,7 +198,7 @@
         <!-- Modal body -->
         <div class="modal-body">
           <p class="text-center">
-            You are going to hire John Doe, by pressing Send button you will send invitation for job or project.
+            You are going to hire John Doe, by pressing Send button you will send invitation for this job or project.
           </p>
         </div>
   
